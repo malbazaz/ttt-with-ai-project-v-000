@@ -1,17 +1,17 @@
+require 'pry'
+
 class Board 
   
-  attr_accessor :cells 
+  attr_accessor :cells
   
-def initialize(cells = [" "," "," "," "," "," "," "," "," "])
-  @cells = cells
+def initialize
+  @cells = [" "," "," "," "," "," "," "," "," "]
 end 
   
-  def cells
-    @cells = []
-  end 
   
 def reset! 
     @cells = [" "," "," "," "," "," "," "," "," "]
+    #binding.pry 
 end 
 
 def display
